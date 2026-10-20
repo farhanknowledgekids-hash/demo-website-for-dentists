@@ -1,0 +1,62 @@
+/*
+  LUMIÈRE DENTAL — design tokens
+  Concept: an editorial, hospitality-grade clinic. Warm ivory paper, forest-green ink,
+  a single champagne accent used sparingly, photography framed like a magazine spread.
+*/
+:root {
+  /* colour */
+  --ivory: #f4efe6;
+  --porcelain: #fbf8f2;
+  --stone: #e6dfd2;
+  --sand: #ebe3d5; /* testimonial band: a deeper paper tone between ivory sections */
+  --ink: #18211c;
+  --ink-soft: #4a554f; /* 7.0:1 on ivory */
+  --ink-faint: #6b746e; /* 4.6:1 on ivory, for small meta text only */
+  --forest: #1e3a2f;
+  --forest-deep: #142a21;
+  --forest-soft: #2d5142;
+  --sage: #a9b5a0;
+  --champagne: #b8986a; /* decorative only on light grounds */
+  --champagne-ink: #7d6238; /* 5.0:1 on ivory, accent text */
+  --champagne-light: #d6be93; /* accent text on forest */
+  --on-dark: #f4efe6;
+  --on-dark-soft: rgba(244, 239, 230, 0.74);
+  --line: rgba(24, 33, 28, 0.13);
+  --line-strong: rgba(24, 33, 28, 0.3);
+  --line-dark: rgba(244, 239, 230, 0.18);
+  --danger: #a3392b;
+  --danger-bg: #f8e9e4;
+  --focus: #1e3a2f;
+
+  /* type */
+  --f-display: 'Newsreader', 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  --f-sans: 'Schibsted Grotesk', 'Helvetica Neue', Helvetica, Arial, system-ui, sans-serif;
+  --t-display-1: clamp(3rem, 1.6rem + 6.2vw, 7.6rem);
+  --t-display-2: clamp(2.25rem, 1.5rem + 3vw, 4.25rem);
+  --t-display-3: clamp(1.6rem, 1.3rem + 1.2vw, 2.3rem);
+  --t-lede: clamp(1.075rem, 1rem + 0.35vw, 1.3rem);
+  --t-body: 1.0625rem;
+  --t-small: 0.9375rem;
+  --t-meta: 0.8125rem;
+  --t-label: 0.75rem;
+
+  /* space */
+  --gutter: clamp(20px, 4.5vw, 64px);
+  --maxw: 1400px;
+  --section: clamp(88px, 11vw, 176px);
+  --nav-h: 72px;
+
+  /* shape */
+  --r-xs: 2px;
+  --r-sm: 6px;
+  --r-pill: 999px;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-io: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 180ms;
+  --dur-med: 420ms;
+  --dur-slow: 900ms;
+
+  color-scheme: light;
+}

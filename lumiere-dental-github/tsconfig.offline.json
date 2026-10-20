@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": { "jsx": "preserve", "types": [] },
+  "include": ["src", "types-offline"]
+}

@@ -1,0 +1,48 @@
+LUMIERE DENTAL - HOW TO USE
+===========================
+
+1) START THE WEBSITE
+   Double-click:  Start Website.bat
+   A black window opens (keep it open) and the website opens in your browser
+   at  http://localhost:4173
+
+2) BOOK AN APPOINTMENT
+   Click "Book a visit" (or "Book your visit"), pick a treatment, dentist, day and time,
+   enter name, email and phone, and click "Confirm booking".
+
+3) SEE IT IN THE SPREADSHEET
+   Open  Bookings.csv  in this folder (it opens in Excel).
+   Each booking is one row: date received, reference, status, treatment, dentist,
+   date, time, patient name, email, phone and note.
+   The black window also prints every new booking as it arrives.
+
+   - Change the Status column to Confirmed / Completed / Cancelled as you like.
+     "Cancelled" makes that time bookable again on the website.
+   - If Excel has the file open while someone books, the booking is kept safely in
+     Bookings-pending.csv and moved into Bookings.csv as soon as you close Excel.
+     (Close and reopen Bookings.csv to see the newest rows.)
+
+4) GOOGLE SHEET COPY (already connected)
+   Every booking is also copied to your Google Sheet "Lumiere Dental - Bookings"
+   in your Google Drive. The "Google Sheet" column in Bookings.csv shows whether
+   the copy worked.
+
+5) STOP THE WEBSITE
+   Close the black window.
+
+6) PUT IT ONLINE FOR EVERYONE (Vercel)
+   Double-click:  Deploy to Vercel.bat
+   - The first time, your browser opens: log in to Vercel (Google, GitHub or email).
+   - It uploads the site and opens your live address (like https://lumiere-dental.vercel.app).
+   - The address is saved in vercel-url.txt. Share it with anyone.
+   - On the online site, bookings go to your Google Sheet "Lumiere Dental - Bookings"
+     (Bookings.csv is only for the Start Website.bat version on this computer).
+   - Changed something? Double-click it again to update the live site.
+
+IMPORTANT
+   - Use Start Website.bat. Opening index.html directly, or viewing it inside the
+     Claude app preview, cannot write to Bookings.csv (a web page on its own is not
+     allowed to write files on your computer).
+   - index.html on its own still works for sharing the design, and it sends bookings
+     to the Google Sheet when opened in Chrome or Edge.
+   - Needs Node.js (already installed on this computer).
