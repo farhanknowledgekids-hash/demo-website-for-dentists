@@ -1,0 +1,9 @@
+node_modules/
+dist/
+index.html
+Bookings.csv
+vercel-status.txt
+vercel-deploy-log.txt
+vercel-url.txt
+.vercel/
+*.log
